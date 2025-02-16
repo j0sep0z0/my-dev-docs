@@ -3,6 +3,7 @@
 Este archivo describe la configuración de **Prettier** utilizada en este proyecto, incluyendo las reglas aplicadas y las dependencias necesarias.
 
 ## 📌 Instalación de dependencias
+
 Para que esta configuración funcione correctamente, instala las siguientes dependencias:
 
 ```sh
@@ -22,6 +23,7 @@ pnpm add -D prettier prettier-plugin-tailwindcss @trivago/prettier-plugin-sort-i
 ```
 
 ## 📂 Creación del archivo de configuración
+
 Para que Prettier funcione correctamente, debes crear un archivo `.prettierrc` en la raíz del proyecto con el siguiente contenido:
 
 ```json
@@ -34,21 +36,15 @@ Para que Prettier funcione correctamente, debes crear un archivo `.prettierrc` e
   "singleQuote": false,
   "jsxSingleQuote": false,
   "bracketSpacing": true,
-  "importOrder": [
-    "<THIRD_PARTY_MODULES>",
-    "<YOUR_MODULES>",
-    "^@/.*$",
-    "^[./]"
-  ],
+  "importOrder": ["<THIRD_PARTY_MODULES>", "<YOUR_MODULES>", "^@/.*$", "^[./]"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "importOrderCaseInsensitive": true,
   "importOrderGroupNamespaceSpecifiers": true,
   "plugins": [
-    "prettier-plugin-tailwindcss",
-    "@trivago/prettier-plugin-sort-imports"
-  ],
-  "tailwindConfig": "./tailwind.config.ts"
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ]
 }
 ```
 
@@ -56,23 +52,23 @@ Para que Prettier funcione correctamente, debes crear un archivo `.prettierrc` e
 
 El archivo `.prettierrc` contiene la siguiente configuración:
 
-| Clave | Valor | Descripción |
-|-------|-------|-------------|
-| `semi` | `false` | No usa punto y coma al final de las líneas. |
-| `printWidth` | `120` | Máximo ancho de línea antes de hacer un salto. |
-| `trailingComma` | `"es5"` | Agrega comas finales en ES5+. |
-| `tabWidth` | `2` | Usa 2 espacios en lugar de tabs. |
-| `useTabs` | `false` | Usa espacios en lugar de tabs. |
-| `singleQuote` | `false` | Usa comillas dobles en lugar de simples. |
-| `jsxSingleQuote` | `false` | Usa comillas dobles en JSX. |
-| `bracketSpacing` | `true` | Agrega espacio dentro de los corchetes `{ foo: "bar" }`. |
-| `importOrder` | `[ "<THIRD_PARTY_MODULES>", "<YOUR_MODULES>", "^@/.*$", "^[./]" ]` | Ordena imports en grupos. |
-| `importOrderSeparation` | `true` | Agrega una línea en blanco entre grupos de imports. |
-| `importOrderSortSpecifiers` | `true` | Ordena automáticamente los imports dentro de cada grupo. |
-| `importOrderCaseInsensitive` | `true` | Ignora mayúsculas/minúsculas al ordenar imports. |
-| `importOrderGroupNamespaceSpecifiers` | `true` | Agrupa imports con nombres similares. |
-| `plugins` | `[ "prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports" ]` | Plugins adicionales para orden automático. |
-| `tailwindConfig` | `"./tailwind.config.ts"` | Usa un archivo de configuración de TailwindCSS. |
+| Clave                                 | Valor                                                                        | Descripción                                              |
+| ------------------------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------- |
+| `semi`                                | `false`                                                                      | No usa punto y coma al final de las líneas.              |
+| `printWidth`                          | `120`                                                                        | Máximo ancho de línea antes de hacer un salto.           |
+| `trailingComma`                       | `"es5"`                                                                      | Agrega comas finales en ES5+.                            |
+| `tabWidth`                            | `2`                                                                          | Usa 2 espacios en lugar de tabs.                         |
+| `useTabs`                             | `false`                                                                      | Usa espacios en lugar de tabs.                           |
+| `singleQuote`                         | `false`                                                                      | Usa comillas dobles en lugar de simples.                 |
+| `jsxSingleQuote`                      | `false`                                                                      | Usa comillas dobles en JSX.                              |
+| `bracketSpacing`                      | `true`                                                                       | Agrega espacio dentro de los corchetes `{ foo: "bar" }`. |
+| `importOrder`                         | `[ "<THIRD_PARTY_MODULES>", "<YOUR_MODULES>", "^@/.*$", "^[./]" ]`           | Ordena imports en grupos.                                |
+| `importOrderSeparation`               | `true`                                                                       | Agrega una línea en blanco entre grupos de imports.      |
+| `importOrderSortSpecifiers`           | `true`                                                                       | Ordena automáticamente los imports dentro de cada grupo. |
+| `importOrderCaseInsensitive`          | `true`                                                                       | Ignora mayúsculas/minúsculas al ordenar imports.         |
+| `importOrderGroupNamespaceSpecifiers` | `true`                                                                       | Agrupa imports con nombres similares.                    |
+| `plugins`                             | `[ "prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports" ]` | Plugins adicionales para orden automático.               |
+| `tailwindConfig`                      | `"./tailwind.config.ts"`                                                     | Usa un archivo de configuración de TailwindCSS.          |
 
 ## 🚀 Uso
 
@@ -97,8 +93,9 @@ npm run format
 ```
 
 ---
+
 📌 **Referencias**:
+
 - [Prettier Docs](https://prettier.io/docs/en/index.html)
 - [Prettier Plugin Tailwind](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 - [Sort Imports Plugin](https://github.com/trivago/prettier-plugin-sort-imports)
-
