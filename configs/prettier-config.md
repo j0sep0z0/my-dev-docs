@@ -110,12 +110,14 @@ Y luego ejecútalo con:
 npm run format
 ```
 
----
-
 <br>
+
+---
 
 📌 **Referencias**:
 
 - [Prettier Docs](https://prettier.io/docs/en/index.html)
 - [Prettier Plugin Tailwind](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 - [Sort Imports Plugin](https://github.com/trivago/prettier-plugin-sort-imports)
+
+---
