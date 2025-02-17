@@ -1,6 +1,6 @@
 # 🎨 Prettier Configuration
 
-Este archivo describe la configuración de **Prettier** utilizada en este proyecto, incluyendo las reglas aplicadas y las dependencias necesarias.
+Este archivo describe la configuración de **Prettier** utilizada en mis proyectos, incluyendo las reglas aplicadas y las dependencias necesarias.
 
 ## 📌 Instalación de dependencias
 
@@ -36,7 +36,13 @@ Para que Prettier funcione correctamente, debes crear un archivo `.prettierrc` e
   "singleQuote": false,
   "jsxSingleQuote": false,
   "bracketSpacing": true,
-  "importOrder": ["<THIRD_PARTY_MODULES>", "<YOUR_MODULES>", "^@/.*$", "^[./]"],
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "<YOUR_MODULES>",
+    "^@/.*\\.tsx$",
+    "^@/.*$",
+    "^[./]"
+  ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "importOrderCaseInsensitive": true,
