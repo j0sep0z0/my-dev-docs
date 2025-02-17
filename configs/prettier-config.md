@@ -2,6 +2,8 @@
 
 Este archivo describe la configuración de **Prettier** utilizada en mis proyectos, incluyendo las reglas aplicadas y las dependencias necesarias.
 
+<br>
+
 ## 📌 Instalación de dependencias
 
 Para que esta configuración funcione correctamente, instala las siguientes dependencias:
@@ -21,6 +23,8 @@ Si usas **pnpm**:
 ```sh
 pnpm add -D prettier prettier-plugin-tailwindcss @trivago/prettier-plugin-sort-imports
 ```
+
+<br>
 
 ## 📂 Creación del archivo de configuración
 
@@ -54,6 +58,8 @@ Para que Prettier funcione correctamente, debes crear un archivo `.prettierrc` e
 }
 ```
 
+<br>
+
 ## ⚙️ Configuración
 
 El archivo `.prettierrc` contiene la siguiente configuración:
@@ -76,7 +82,11 @@ El archivo `.prettierrc` contiene la siguiente configuración:
 | `plugins`                             | `[ "prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports" ]` | Plugins adicionales para orden automático.               |
 | `tailwindConfig`                      | `"./tailwind.config.ts"`                                                     | Usa un archivo de configuración de TailwindCSS.          |
 
+<br>
+
 > **Nota**: Prettier y el plugin `prettier-plugin-tailwindcss` buscan automáticamente el archivo de configuración de TailwindCSS en la raíz del proyecto. No es necesario especificar la ruta si el archivo `tailwind.config.ts` está ubicado allí.
+
+<br>
 
 ## 🚀 Uso
 
@@ -101,6 +111,8 @@ npm run format
 ```
 
 ---
+
+<br>
 
 📌 **Referencias**:
 
