@@ -76,6 +76,8 @@ El archivo `.prettierrc` contiene la siguiente configuración:
 | `plugins`                             | `[ "prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports" ]` | Plugins adicionales para orden automático.               |
 | `tailwindConfig`                      | `"./tailwind.config.ts"`                                                     | Usa un archivo de configuración de TailwindCSS.          |
 
+> **Nota**: Prettier y el plugin `prettier-plugin-tailwindcss` buscan automáticamente el archivo de configuración de TailwindCSS en la raíz del proyecto. No es necesario especificar la ruta si el archivo `tailwind.config.ts` está ubicado allí.
+
 ## 🚀 Uso
 
 Puedes ejecutar Prettier manualmente con:
