@@ -40,13 +40,7 @@ Para que Prettier funcione correctamente, debes crear un archivo `.prettierrc` e
   "singleQuote": false,
   "jsxSingleQuote": false,
   "bracketSpacing": true,
-  "importOrder": [
-    "<THIRD_PARTY_MODULES>",
-    "<YOUR_MODULES>",
-    "^@/.*\\.tsx$",
-    "^@/.*$",
-    "^[./]"
-  ],
+  "importOrder": ["<THIRD_PARTY_MODULES>", "<YOUR_MODULES>", "^@/.*$", "^[./]"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "importOrderCaseInsensitive": true,
